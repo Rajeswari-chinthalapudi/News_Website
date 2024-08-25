@@ -172,33 +172,33 @@ body, h1, p, ul {
     margin: 0 5px 3px; 
   }
   
-  /* Responsive Design */
+ 
   @media (max-width: 768px) {
     .main-content {
-        padding: 20px; /* Adjust this value as needed */
+        padding: 20px; 
     }
 }
 @media (max-width: 768px) {
   .search-input,
   .search-button {
-      font-size: 1.2em; /* Adjust this value as needed */
+      font-size: 1.2em; 
   }
 }
 
 @media (max-width: 768px) {
   .news-grid {
       flex-direction: column;
-      gap: 10px; /* Smaller gap for mobile screens */
+      gap: 10px;
   }
 
   .card {
       max-width: 100%;
-      margin-bottom: 20px; /* Keep this margin for spacing */
+      margin-bottom: 20px; 
   }
 }
 @media (max-width: 768px) {
   .logo {
-      font-size: 2.5em; /* Reduce the logo size */
+      font-size: 2.5em; 
   }
 
   .circle {
