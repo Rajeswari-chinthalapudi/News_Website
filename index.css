@@ -1,0 +1,208 @@
+
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .header {
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
+    display: flex; 
+    align-items: center; 
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .logo {
+    font-size: 5em;
+    font-weight: 500;
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .circle {
+    width: 50px; 
+    height: 50px; 
+    background-color: #d43b39; 
+    border-radius: 50%; 
+    margin: 0 5px; 
+  }
+  
+ 
+  .header-underline {
+    border: none;
+    border-top: 2px solid black;
+    margin: 0 0 10px 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  
+  .search-container {
+    margin-top: 100px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+  .search-input {
+    padding: 10px 20px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    background-image: url('https://w7.pngwing.com/pngs/198/609/png-transparent-computer-icons-symbol-search-box-magnifying-glass-search-miscellaneous-black-zooming-user-interface-thumbnail.png'); /* Path to magnifying glass icon */
+    background-size: 16px; 
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    width: 200px;
+    outline: none;
+    font-size: 1.8em;
+  }
+  
+  .search-button {
+    padding: 8px 15px;
+    font-size: 1.8em;
+    border: none;
+    background-color: #d43b39;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  
+  .main-content {
+    padding: 100px;
+  }
+  
+  .section-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: red;
+    font-weight: 400;
+    margin-left:80px;
+  }
+  
+
+  .news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; 
+    justify-content: center;
+  }
+  
+  .card {
+    border: none; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    max-width: calc(30% - 20px); 
+    margin-bottom: 100px; 
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .news-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; 
+  }
+  
+  .right-arrow-icon {
+    width: 16px;
+    height: 16px; 
+    margin-left: 5px; 
+  }
+  
+  .news-title {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: bold; 
+    color: #333;
+  }
+  
+  .news-description {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5; 
+  }
+  
+  .read-more {
+    color: #1f1e1e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.0em; 
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+    color: #b32d2c;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5em;
+    border-top: 1px solid #ddd;
+    color: #777;
+    margin-top: 40px; 
+    background-color: white; 
+  }
+  
+  .circle2 {
+    width: 5px; 
+    height: 5px; 
+    background-color: #d43b39; 
+    border-radius: 50%; 
+    display: inline-block; 
+    margin: 0 5px 3px; 
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-content {
+        padding: 20px; /* Adjust this value as needed */
+    }
+}
+@media (max-width: 768px) {
+  .search-input,
+  .search-button {
+      font-size: 1.2em; /* Adjust this value as needed */
+  }
+}
+
+@media (max-width: 768px) {
+  .news-grid {
+      flex-direction: column;
+      gap: 10px; /* Smaller gap for mobile screens */
+  }
+
+  .card {
+      max-width: 100%;
+      margin-bottom: 20px; /* Keep this margin for spacing */
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+      font-size: 2.5em; /* Reduce the logo size */
+  }
+
+  .circle {
+      width: 30px; 
+      height: 30px; 
+  }
+}
